@@ -3,27 +3,16 @@ import java.util.Scanner;
 public class idade {
 
 	public static void main(String[] args) {
-		Scanner leia=new Scanner(System.in );
-		int i; 
+		Scanner leia = new Scanner(System.in);
+		int i = 1, d, a;
 		
-		System.out.println("Escreva sua idade:");
-		i = leia.nextInt(); 
-		switch(i){ 
-		case 6: System.out.println("Dente de leite");
-		break;
-		case 7:System.out.println("Júnior");
-		break; 
-		case 8: System.out.println("Júnior max");
-		break; 
-		case 9: System.out.println("Júnior master");
-		break; 
-		case 10: System.out.println("Master");
-		break;
-		default: System.out.println("A escola não recebe alunos de sua idade.");
-		} 
-		
-		leia.close();
-
+		while(i<7) {
+			System.out.println("Inseira sua data de nascimento:");
+			d = leia.nextInt();
+			a = 2026 - d;
+			System.out.println("sua idade é:" +a );
+			i++;
+		}
 	}
 
 }
